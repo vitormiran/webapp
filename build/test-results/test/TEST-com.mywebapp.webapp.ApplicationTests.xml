@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mywebapp.webapp.ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-11T22:55:28" hostname="VITORS-AIR.station" time="0.067">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.mywebapp.webapp.ApplicationTests" time="0.067"/>
+  <system-out><![CDATA[23:55:25.754 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [ApplicationTests]: using SpringBootContextLoader
+23:55:25.758 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.mywebapp.webapp.ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:55:25.759 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.mywebapp.webapp.ApplicationTests]: ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:55:25.771 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [ApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+23:55:25.814 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [/Users/vitormiranda/Documents/webapp/build/classes/java/main/com/mywebapp/webapp/Application.class]
+23:55:25.816 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.mywebapp.webapp.Application for test class com.mywebapp.webapp.ApplicationTests
+23:55:25.861 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [ApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+23:55:25.862 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [ApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-04-11T23:55:25.990+01:00  INFO 18325 --- [    Test worker] com.mywebapp.webapp.ApplicationTests     : Starting ApplicationTests using Java 17.0.6 with PID 18325 (started by vitormiranda in /Users/vitormiranda/Documents/webapp)
+2023-04-11T23:55:25.991+01:00  INFO 18325 --- [    Test worker] com.mywebapp.webapp.ApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-04-11T23:55:26.387+01:00  INFO 18325 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-11T23:55:26.447+01:00  INFO 18325 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2023-04-11T23:55:26.609+01:00 DEBUG 18325 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-04-11T23:55:26.610+01:00  INFO 18325 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-11T23:55:26.752+01:00  INFO 18325 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@79ca7bea
+2023-04-11T23:55:26.753+01:00  INFO 18325 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-11T23:55:26.781+01:00 DEBUG 18325 --- [    Test worker] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2023-04-11T23:55:26.793+01:00  INFO 18325 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-11T23:55:26.811+01:00  INFO 18325 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-11T23:55:26.954+01:00  INFO 18325 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-11T23:55:27.284+01:00  INFO 18325 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-11T23:55:27.288+01:00  INFO 18325 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-11T23:55:27.522+01:00  WARN 18325 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-11T23:55:27.582+01:00  INFO 18325 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-04-11T23:55:28.261+01:00  INFO 18325 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2023-04-11T23:55:28.300+01:00  INFO 18325 --- [    Test worker] com.mywebapp.webapp.ApplicationTests     : Started ApplicationTests in 2.419 seconds (process running for 2.975)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
