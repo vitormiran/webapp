@@ -1,3 +1,12 @@
+CREATE TABLE IF NOT EXISTS ExpenseCategory (
+    id SERIAL primary key,
+    category_name varchar(255),
+    description text,
+    recurring BOOLEAN,
+    enabled BOOLEAN,
+    date_created TIMESTAMP NOT NULL,
+    date_updated TIMESTAMP
+);
 
 CREATE TABLE IF NOT EXISTS Content (
     id SERIAL primary key,
