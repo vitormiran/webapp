@@ -1,12 +1,11 @@
 package com.mywebapp.webapp.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDateTime;
 
+@Entity
 public class ExpenseCategory {
 
     @Id
@@ -19,7 +18,6 @@ public class ExpenseCategory {
     Boolean enabled;
     LocalDateTime dateCreated;
     LocalDateTime dateUpdated;
-    String url;
 
     public ExpenseCategory(Integer id, String category_name, String description, Boolean recurring, Boolean enabled, LocalDateTime dateCreated, LocalDateTime dateUpdated, String url) {
         this.id = id;
@@ -29,7 +27,6 @@ public class ExpenseCategory {
         this.enabled = enabled;
         this.dateCreated = dateCreated;
         this.dateUpdated = dateUpdated;
-        this.url = url;
     }
 
     public ExpenseCategory() {
@@ -89,13 +86,5 @@ public class ExpenseCategory {
 
     public void setDateUpdated(LocalDateTime dateUpdated) {
         this.dateUpdated = dateUpdated;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
     }
 }

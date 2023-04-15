@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "cc",
+      "type": "com.mywebapp.webapp.config.ContentCalendarProperties",
+      "sourceType": "com.mywebapp.webapp.config.ContentCalendarProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cc.about",
+      "type": "java.lang.String",
+      "sourceType": "com.mywebapp.webapp.config.ContentCalendarProperties"
+    },
+    {
+      "name": "cc.welcome-message",
+      "type": "java.lang.String",
+      "sourceType": "com.mywebapp.webapp.config.ContentCalendarProperties"
+    }
+  ],
+  "hints": []
+}
