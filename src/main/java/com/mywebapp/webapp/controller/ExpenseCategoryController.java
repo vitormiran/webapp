@@ -16,7 +16,6 @@ public class ExpenseCategoryController {
 
     private final ExpenseCategoryRepository repository;
 
-
     public ExpenseCategoryController(ExpenseCategoryRepository repository) {
         this.repository = repository;
     }
@@ -30,5 +29,11 @@ public class ExpenseCategoryController {
     @DeleteMapping("/delete/{id}")
     public void deleteExpenseCategory(@PathVariable Integer id) {
         repository.deleteById(id);
+    }
+
+    @ResponseStatus(HttpStatus.OK)
+    @PostMapping("/add")
+    public void addExpenseCategory(ExpenseCategory newItem) {
+        repository.save(newItem);
     }
 }
